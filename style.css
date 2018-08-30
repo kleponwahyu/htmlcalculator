@@ -1,0 +1,46 @@
+#isi{
+	background-color: #333;
+	padding: 15px;
+	width: 70%;
+	max-width: 300px;
+	min-width: 300px;
+}
+#hasil{
+	background-color: #f4f4f4;
+	padding-left: 7px;
+	width: 85%;
+	float: left;
+	box-sizing: border-box;
+	border-right: 5px #333 solid;
+}
+#reset{
+	background-color: #f1f1f1;
+	width: 15%;
+	float: right;
+	box-sizing: border-box;
+	text-align: center;
+	border-left: 5px #333 solid;
+}
+#tombol{
+	background-color: #333;
+	padding: 10px;
+}
+button{
+	font-size: 18px;
+	padding: 10px;
+	margin: 2px;
+}
+
+.grid-container {
+  	display: grid;
+  	grid-template-columns: auto auto auto auto;
+  	background-color: #f1f1f1;
+  	padding: 10px;
+}
+.grid-item {
+  	background-color: rgba(255, 255, 255, 0.8);
+  	border: 1px solid rgba(0, 0, 0, 0.8);
+  	padding: 20px;
+  	font-size: 30px;
+  	text-align: center;
+}

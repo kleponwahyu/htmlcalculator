@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="isi">
+	<div id="display">
+		<h1 id="hasil">0</h1>
+		<h1 id="reset" onclick="reset()">C</button><br>
+	</div>
+
+	<div class="grid-container">
+		<div class="grid-item" onmouseup="tujuh()">7</div>
+		<div class="grid-item" onmouseup="delapan()">8</div>
+		<div class="grid-item" onmouseup="sembilan()">9</div>
+		<div class="grid-item" onmouseup="tambah()">+</div>
+		<div class="grid-item" onmouseup="empat()">4</div>
+		<div class="grid-item" onmouseup="lima()">5</div>
+		<div class="grid-item" onmouseup="enam()">6</div>
+		<div class="grid-item" onmouseup="kurang()">-</div>
+		<div class="grid-item" onmouseup="satu()">1</div>
+		<div class="grid-item" onmouseup="dua()">2</div>
+		<div class="grid-item" onmouseup="tiga()">3</div>
+		<div class="grid-item" onmouseup="kali()">x</div>
+		<div class="grid-item" onmouseup="nol()">0</div>
+		<div class="grid-item" onmouseup="koma()">.</div>
+		<div class="grid-item" onmouseup="hasil()">=</div>
+		<div class="grid-item" onmouseup="bagi()">:</div>
+	</div>
+</div>
+</body>
+</html>
