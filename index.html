@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculator</title>
+	<title>Calculator</title>		<!--A common tag in the head-->
 	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="isi">
-	<div id="display">
+<div id="isi">		<!--A container for all the calculator, useful for the styling in css-->
+	<div id="display">		<!--The display for result and the reset button-->
 		<h1 id="hasil">0</h1>
 		<h1 id="reset" onclick="reset()">C</button><br>
 	</div>
 
-	<div class="grid-container">
-		<div class="grid-item" onmouseup="tujuh()">7</div>
+	<div class="grid-container">		<!--The button is inside this div. This container is used for the grid css-->
+		<div class="grid-item" onmouseup="tujuh()">7</div>		<!--A button that if clicked, will run the method. The method name is in Bahasa Indonesia-->
 		<div class="grid-item" onmouseup="delapan()">8</div>
 		<div class="grid-item" onmouseup="sembilan()">9</div>
 		<div class="grid-item" onmouseup="tambah()">+</div>
