@@ -6,29 +6,29 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="isi">		<!--A container for all the calculator, useful for the styling in css-->
+<div id="container">		<!--A container for all the calculator, useful for the styling in css-->
 	<div id="display">		<!--The display for result and the reset button-->
-		<h1 id="hasil">0</h1>
+		<h1 id="result-box">0</h1>
 		<h1 id="reset" onclick="reset()">C</button><br>
 	</div>
 
 	<div class="grid-container">		<!--The button is inside this div. This container is used for the grid css-->
-		<div class="grid-item" onmouseup="tujuh()">7</div>		<!--A button that if clicked, will run the method. The method name is in Bahasa Indonesia-->
-		<div class="grid-item" onmouseup="delapan()">8</div>
-		<div class="grid-item" onmouseup="sembilan()">9</div>
-		<div class="grid-item" onmouseup="tambah()">+</div>
-		<div class="grid-item" onmouseup="empat()">4</div>
-		<div class="grid-item" onmouseup="lima()">5</div>
-		<div class="grid-item" onmouseup="enam()">6</div>
-		<div class="grid-item" onmouseup="kurang()">-</div>
-		<div class="grid-item" onmouseup="satu()">1</div>
-		<div class="grid-item" onmouseup="dua()">2</div>
-		<div class="grid-item" onmouseup="tiga()">3</div>
-		<div class="grid-item" onmouseup="kali()">x</div>
-		<div class="grid-item" onmouseup="nol()">0</div>
-		<div class="grid-item" onmouseup="koma()">.</div>
-		<div class="grid-item" onmouseup="hasil()">=</div>
-		<div class="grid-item" onmouseup="bagi()">:</div>
+		<div class="grid-item" onmouseup="seven()">7</div>		<!--A button that if clicked, will run the method-->
+		<div class="grid-item" onmouseup="eight()">8</div>
+		<div class="grid-item" onmouseup="nine()">9</div>
+		<div class="grid-item" onmouseup="plus()">+</div>
+		<div class="grid-item" onmouseup="four()">4</div>
+		<div class="grid-item" onmouseup="five()">5</div>
+		<div class="grid-item" onmouseup="six()">6</div>
+		<div class="grid-item" onmouseup="minus()">-</div>
+		<div class="grid-item" onmouseup="one()">1</div>
+		<div class="grid-item" onmouseup="two()">2</div>
+		<div class="grid-item" onmouseup="three()">3</div>
+		<div class="grid-item" onmouseup="multi()">x</div>
+		<div class="grid-item" onmouseup="zero()">0</div>
+		<div class="grid-item" onmouseup="coma()">.</div>
+		<div class="grid-item" onmouseup="result()">=</div>
+		<div class="grid-item" onmouseup="divide()">:</div>
 	</div>
 </div>
 </body>

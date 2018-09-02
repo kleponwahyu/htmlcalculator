@@ -1,11 +1,11 @@
-#isi{
+#container{
 	background-color: #333;
 	padding: 15px;
 	width: 70%;
 	max-width: 300px;
 	min-width: 300px;
 }
-#hasil{
+#result-box{
 	background-color: #f4f4f4;
 	padding-left: 7px;
 	width: 85%;
@@ -20,10 +20,6 @@
 	box-sizing: border-box;
 	text-align: center;
 	border-left: 5px #333 solid;
-}
-#tombol{
-	background-color: #333;
-	padding: 10px;
 }
 button{
 	font-size: 18px;
