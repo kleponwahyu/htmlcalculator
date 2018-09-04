@@ -1,87 +1,54 @@
-var x, y, check = false, operation;		//Declaring variable
+var x = 0.0, y = 0.0, check = false, operation;	//Declaring variable
 
-function coma(){		//Declaring a coma function, will add this later for sure...
+function coma(){					//Declaring a coma function, will add this later for sure...
 	
 }
-function one(){		//Declaring a function for '1' button.
-	document.getElementById('result-box').innerHTML = "1";
-	if(check){		//Using if else and check variable because we need to know whether we fill the x variable or the y variable
-		y = 1.0;
+function inputVariable(temps){		//Declaring a function for inputting x and y variable
+	if(check){
+		if(y == 0)
+			y = temps;
+		else {
+			y = temps + (y * 10);
+		}
+		document.getElementById('result-box').innerHTML = y;
 	} else{
-		x = 1.0;
+		if(x == 0)
+			x = temps;
+		else {
+			x = temps + (x * 10);
+		}
+		document.getElementById('result-box').innerHTML = x;
 	}
 }
-function two(){		//Declaring a function for '2' button.
-	document.getElementById('result-box').innerHTML = "2";
-	if(check){
-		y = 2.0;
-	} else{
-		x = 2.0;
-	}
+function one(){			//Declaring a function for '1' button.
+	inputVariable(1);
+}
+function two(){			//Declaring a function for '2' button.
+	inputVariable(2);
 }
 function three(){		//Declaring a function for '3' button.
-	document.getElementById('result-box').innerHTML = "3";
-	if(check){
-		y = 3.0;
-	} else{
-		x = 3.0;
-	}
+	inputVariable(3);
 }
 function four(){		//Declaring a function for '4' button. 
-	document.getElementById('result-box').innerHTML = "4";
-	if(check){
-		y = 4.0;
-	} else{
-		x = 4.0;
-	}
+	inputVariable(4);
 }
 function five(){		//Declaring a function for '5' button.
-	document.getElementById('result-box').innerHTML = "5";
-	if(check){
-		y = 5.0;
-	} else{
-		x = 5.0;
-	}
+	inputVariable(5);
 }
-function six(){		//Declaring a function for '6' button.
-	document.getElementById('result-box').innerHTML = "6";
-	if(check){
-		y = 6.0;
-	} else{
-		x = 6.0;
-	}
+function six(){			//Declaring a function for '6' button.
+	inputVariable(6);
 }
 function seven(){		//Declaring a function for '7' button.
-	document.getElementById('result-box').innerHTML = "7";
-	if(check){
-		y = 7.0;
-	} else{
-		x = 7.0;
-	}
+	inputVariable(7);
 }
 function eight(){		//Declaring a function for '8' button.
-	document.getElementById('result-box').innerHTML = "8";
-	if(check){
-		y = 8.0;
-	} else{
-		x = 8.0;
-	}
+	inputVariable(8);
 }
 function nine(){		//Declaring a function for '9' button.
-	document.getElementById('result-box').innerHTML = "9";
-	if(check){
-		y = 9.0;
-	} else{
-		x = 9.0;
-	}
+	inputVariable(9);
 }
 function zero(){		//Declaring a function for '0' button.
-	document.getElementById('result-box').innerHTML = "0";
-	if(check){
-		y = 0.0;
-	} else{
-		x = 0.0;
-	}
+	inputVariable(0);
 }
 
 function plus(){		//Declaring a function for addition button
@@ -107,28 +74,23 @@ function divide(){		//Declaring a function for division button
 function reset(){		//Declaring a function for resetting x and y variable
 	document.getElementById('result-box').innerHTML = "0";
 	x = y = 0.0;
+	check = false;
 }
 function result(){		//Declaring a function for the final operation
 	switch(operation){
 		case 0:
-		operasi = x + y;
-		document.getElementById('result-box').innerHTML = operasi;
-		check = false;
-		break;
+			x = x + y;
+			break;
 		case 1:
-		operasi = x - y;
-		document.getElementById('result-box').innerHTML = operasi;
-		check = false;
-		break;
+			x = x - y;
+			break;
 		case 2:
-		operasi = x * y;
-		document.getElementById('result-box').innerHTML = operasi;
-		check = false;
-		break;
+			x = x * y;
+			break;
 		case 3:
-		operasi = x / y;
-		document.getElementById('result-box').innerHTML = operasi;
-		check = false;
-		break;
+			x = x / y;		
+			break;
 	}
+	document.getElementById('result-box').innerHTML = x;
+	y = 0;
 }
